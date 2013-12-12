@@ -1,8 +1,5 @@
-= simple_form_for(@article) do |f|
-  = f.error_notification
-
-  .form-inputs
-    = f.input :author
-
+= simple_form_for @article, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :author
   .form-actions
-    = f.button :submit
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), articles_path, :class => 'btn'
