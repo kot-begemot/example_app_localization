@@ -1,3 +1,21 @@
+GIT
+  remote: git://github.com/kot-begemot/rails-localization.git
+  revision: 52a6fbb1a57a15145595f4bba6164e4225a17458
+  tag: v1.1.2
+  specs:
+    rails-localization (1.1.2)
+      i18n
+      rails (>= 3.0.0, < 4.0.0)
+
+GIT
+  remote: git://github.com/kot-begemot/translatable.git
+  revision: 47cbed88490f9deec0606fcf7d6ae79023cbd934
+  specs:
+    translatable (1.0.0)
+      activerecord
+      activesupport
+      i18n
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -123,8 +141,10 @@ DEPENDENCIES
   haml-rails (>= 0.3.4)
   jquery-rails
   rails (= 3.2.16)
+  rails-localization!
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
+  translatable!
   uglifier (>= 1.0.3)
   will_paginate (>= 3.0.3)
