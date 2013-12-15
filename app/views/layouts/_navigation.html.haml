@@ -1,1 +1,3 @@
 = link_to "Example App Localization", root_path, :class => 'brand'
+- I18n.locales[:main_app].each_pair do |locale,language|
+  = link_to_locale locale, language

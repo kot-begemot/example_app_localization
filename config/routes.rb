@@ -1,6 +1,9 @@
+# encoding: utf-8
+
 ExampleAppLocalization::Application.routes.draw do
-  resources :articles
+  localized({"en" => "English", "ru" => "Русский"}) do
+    resources :articles
 
-
-  root :to => "home#index"
+    root :to => "articles#index"
+  end
 end

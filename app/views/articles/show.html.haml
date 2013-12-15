@@ -4,8 +4,16 @@
 
 %p
   %strong= model_class.human_attribute_name(:author) + ':'
-  %br
   = @article.author
+  %br
+  %strong= model_class.human_attribute_name(:title) + ':'
+  = @article.title
+  %br
+  %strong= model_class.human_attribute_name(:content) + ':'
+  = @article.content
+  %br
+  %strong= model_class.human_attribute_name(:locale) + ':'
+  = @article.locale
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), articles_path, :class => 'btn'

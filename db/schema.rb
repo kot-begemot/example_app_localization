@@ -11,10 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131212072645) do
+ActiveRecord::Schema.define(:version => 20131212074559) do
 
   create_table "articles", :force => true do |t|
     t.string   "author"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "translated_articles", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.integer  "origin_id"
+    t.string   "locale"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

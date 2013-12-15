@@ -1,5 +1,11 @@
 = simple_form_for @article, :html => { :class => 'form-horizontal' } do |f|
   = f.input :author
+
+  = f.simple_fields_for :current_translation do |t_f|
+    = t_f.input  :title
+    = t_f.input  :content
+    = t_f.input  :locale, as: :hidden, input_html: { value: ::I18n.locale }
+
   .form-actions
     = f.button :submit, :class => 'btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), articles_path, :class => 'btn'

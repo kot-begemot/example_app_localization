@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new.json
   def new
     @article = Article.new
+    @article.build_current_translation
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
+    @article.build_current_translation  unless @article.current_translation
   end
 
   # POST /articles

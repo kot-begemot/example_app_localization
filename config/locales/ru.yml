@@ -1,0 +1,55 @@
+ru:
+
+  activerecord:
+    models:
+      article:
+        one: "Статья"
+        other: "Статьи"
+    attributes:
+      article:
+        author: "Автор"
+        translations: "Переводы"
+        title: "Заголовок"
+        content: "Содержание"
+        locale: "Локаль"
+        created_at: "Создан в"
+
+  helpers:
+    actions: "Действия"
+    links:
+      back: "Назад"
+      cancel: "Отмена"
+      confirm: "Подтверждение"
+      destroy: "Удалить"
+      new: "Новый"
+      edit: "Редактировать"
+    titles:
+      edit: "Редактировать"
+      save: "Сохранить"
+      new: "Новый"
+      delete: "Удалить"
+
+  simple_form:
+    "yes": 'Да'
+    "no": 'Нет'
+    required:
+      text: 'необходимо'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: 'Найдены ошибки смотрите сюда:'
+    # Labels and hints examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
